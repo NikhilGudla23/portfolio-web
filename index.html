@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Gudla | UI/UX Designer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Your Public Key
+            emailjs.init("F_wy4H2h0x1tPM0dT");
+        })();
+    </script>
+
+    <style>
+        /* Modern Resume Button Styling added to your design */
+        .resume-btn-container {
+            margin-top: 20px;
+        }
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #000;
+            color: #fff !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 1px solid #000;
+        }
+        .resume-btn:hover {
+            background-color: transparent;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .resume-btn i {
+            margin-left: 10px;
+        }
+
+        /* Success/Error states for the contact button */
+        .btn-success { background-color: #28a745 !important; border-color: #28a745 !important; }
+        .btn-error { background-color: #dc3545 !important; border-color: #dc3545 !important; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="#works">Works</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="logo">
+            NIKHIL<br><span>GUDLA</span>
+        </div>
+        <div class="nav-right">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nikhil-gudla-7aba3435b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Nikhil Gudla</h1>
+        </div>
+
+        <div class="hero-grid">
+            <div class="hero-left">
+                <div class="info-block">
+                    <h3>BIOGRAPHY</h3>
+                    <p>Passionate about design for purpose!<br>I'm Nikhil, an aspiring UI/UX<br>Designer & 3rd year B.Tech student<br>based in India.</p>
+                </div>
+                <div class="info-block">
+                    <h3>CONTACT</h3>
+                    <p>Hyderabad, India<br>gudlanikhil23@gmail.com<br>+91 9182338891</p>
+                </div>
+                <div class="info-block">
+                    <h3>SERVICES</h3>
+                    <p>UI/UX Design<br>Dashboard Design<br>Wireframing</p>
+                    
+                    <div class="resume-btn-container">
+                        <a href="c:\Users\NIKHIL.G\NIKHIL GUDLA RESUME.pdf" target="_blank" class="resume-btn">
+                            View Resume <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <img src="https://i.postimg.cc/ZKpzPKnF/IMG-20250528-182411-983.webp" alt="Nikhil Gudla" class="profile-img">
+            </div>
+
+            <div class="hero-right">
+                <div class="stat-block">
+                    <h3>YEAR STUDENT</h3>
+                    <span class="number">3rd</span>
+                </div>
+                <div class="stat-block">
+                    <h3>PROJECTS DONE</h3>
+                    <span class="number">2+</span>
+                </div>
+                <div class="stat-block">
+                    <h3>DEDICATION</h3>
+                    <span class="number">100%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <p>SCROLL DOWN</p>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <p class="section-tag">SERVICES</p>
+        <h2 class="section-title">What I Can Offer</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                <span class="tag">Learning Stage</span>
+                <h3>UI/UX Design</h3>
+                <p>Creating user-centered designs with focus on usability and visual appeal.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+                <span class="tag">Beginner</span>
+                <h3>Wireframing</h3>
+                <p>Building low to high-fidelity wireframes and interactive prototypes.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-th-large"></i></div>
+                <span class="tag">Academic</span>
+                <h3>Dashboard Design</h3>
+                <p>Designing clean dashboard interfaces for data visualization.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                <span class="tag">Available</span>
+                <h3>Open to Work</h3>
+                <p>Seeking internships, collaborations, and learning opportunities.</p>
+            </div>
+        </div>
+
+        <div class="cta-mini">
+            <p>Looking for opportunities to grow and learn</p>
+            <a href="#contact" class="btn-black">Let's Connect</a>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <p class="section-tag">ABOUT ME</p>
+        <h2 class="section-title">Education & Journey</h2>
+
+        <div class="education-grid">
+            <div class="col-left">
+                <p class="col-label">EDUCATION</p>
+                <div class="edu-item">
+                    <span class="date">2024 - 2027</span>
+                    <h3>B.Tech in CSE–IoT</h3>
+                    <p>Sri Indu Institute of Engineering & Technology<br>Hyderabad, India</p>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="icon"><i class="fas fa-bullseye"></i></div>
+                    <div>
+                        <h4>Career Goal</h4>
+                        <p>Building a career as a professional UI/UX Designer</p>
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="icon"><i class="far fa-lightbulb"></i></div>
+                    <div>
+                        <h4>Current Focus</h4>
+                        <p>Learning through hands-on projects and design challenges</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <p class="col-label">MY JOURNEY</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">Present</span>
+                        <h4>Learning UI/UX Design</h4>
+                        <p>Self-learning through projects</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2024</span>
+                        <h4>Academic Projects</h4>
+                        <p>Building practical experience</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2023</span>
+                        <h4>Started B.Tech Journey</h4>
+                        <p>CSE–IoT Specialization</p>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h4>About Me</h4>
+                    <p>I'm Nikhil Gudla, a 3rd-year B.Tech student specializing in Computer Science Engineering with IoT at Sri Indu Institute of Engineering & Technology.</p>
+                    <p>My passion lies at the intersection of technology and design. I believe great design is about solving problems and creating meaningful experiences for users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="section-tag">MY ADVANTAGE</p>
+        <h2 class="section-title">Skills & Tools</h2>
+
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="circle" style="--p:75">
+                    <div class="inner-icon"><i class="fab fa-figma"></i></div>
+                </div>
+                <h3>75%</h3>
+                <p>Figma</p>
+            </div>
+            <div class="skill-item">
+                <div class="circle" style="--p:70">
+                    <div class="inner-icon"><i class="fas fa-pen-nib"></i></div>
+                </div>
+                <h3>70%</h3>
+                <p>UI Design</p>
+            </div>
+            <div class="skill-item">
+                <div class="circle" style="--p:65">
+                    <div class="inner-icon"><i class="fas fa-user-gear"></i></div>
+                </div>
+                <h3>65%</h3>
+                <p>UX Design</p>
+            </div>
+            <div class="skill-item">
+                <div class="circle" style="--p:60">
+                    <div class="inner-icon"><i class="fas fa-code"></i></div>
+                </div>
+                <h3>60%</h3>
+                <p>Web Dev</p>
+            </div>
+            <div class="skill-item">
+                <div class="circle" style="--p:80">
+                    <div class="inner-icon"><i class="fas fa-message"></i></div>
+                </div>
+                <h3>80%</h3>
+                <p>Communication</p>
+            </div>
+            <div class="skill-item">
+                <div class="circle" style="--p:90">
+                    <div class="inner-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                </div>
+                <h3>90%</h3>
+                <p>Creative & Editing</p>
+            </div>
+        </div>
+            
+        <div class="chip-container">
+            <span class="chip">• Currently learning & growing</span>
+        </div>
+    </section>
+
+    <section id="works" class="section bg-light">
+        <p class="section-tag">PORTFOLIO</p>
+        <h2 class="section-title">My Latest Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img placeholder-gray">
+                    <i class="fas fa-hotel fa-3x"></i>
+                </div>
+                <div class="project-info">
+                    <span class="proj-cat">FULL-STACK DESIGN</span>
+                    <h3>Hotel Management System</h3>
+                    <p>A comprehensive hotel management solution featuring room booking, food ordering, billing, and admin dashboard.</p>
+                    <ul>
+                        <li>Room availability & booking</li>
+                        <li>Food ordering system</li>
+                        <li>Auto bill generation</li>
+                    </ul>
+                    <div class="tags">
+                        <span>UI/UX</span><span>Dashboard</span><span>Admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img placeholder-gray">
+                    <i class="fas fa-truck fa-3x"></i>
+                </div>
+                <div class="project-info">
+                    <span class="proj-cat">IOT & LOGISTICS</span>
+                    <h3>Smart Agri Distribution</h3>
+                    <p>Intelligent distribution system for fresh agricultural products using IoT devices and smart logistics.</p>
+                    <ul>
+                        <li>Python & IoT devices</li>
+                        <li>Real-time tracking</li>
+                        <li>Multi-user dashboard</li>
+                    </ul>
+                    <div class="tags">
+                        <span>IoT</span><span>Python</span><span>Blockchain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2 class="section-title">Let's Work Together</h2>
+
+        <div class="contact-wrapper">
+            <div class="contact-left">
+                <h3>Have a project in mind?</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                
+                <a href="mailto:gudlanikhil23@gmail.com" class="contact-item" style="text-decoration: none; color: inherit;">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <div><span class="label">EMAIL</span><p>gudlanikhil23@gmail.com</p></div>
+                </a>
+
+                <a href="tel:+919182338891" class="contact-item" style="text-decoration: none; color: inherit;">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div><span class="label">PHONE</span><p>+91 9182338891</p></div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/nikhil-gudla-7aba3435b/" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
+                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div><span class="label">LINKEDIN</span><p>View Profile</p></div>
+                </a>
+            </div>
+
+            <div class="contact-right">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>YOUR NAME</label>
+                        <input type="text" id="user_name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>YOUR EMAIL</label>
+                        <input type="email" id="user_email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>MESSAGE</label>
+                        <textarea id="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn-black btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>NIKHIL</h3><span>GUDLA</span>
+            </div>
+            <p class="copyright">© 2026 Nikhil Gudla. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nikhil-gudla-7aba3435b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+        </div>
+    </footer>
+
+    <script>
+        // EmailJS Implementation
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.innerHTML;
+            
+            // UI Feedback: Sending
+            btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+
+            const serviceID = 'service_sqhonnr';
+            const templateID = 'template_8v23fgn';
+
+            // Data Mapping
+            const params = {
+                from_name: document.getElementById('user_name').value,
+                reply_to: document.getElementById('user_email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send(serviceID, templateID, params)
+                .then(() => {
+                    // UI Feedback: Success
+                    btn.innerHTML = 'Sent Successfully! <i class="fas fa-check"></i>';
+                    btn.classList.add('btn-success');
+                    document.getElementById('contactForm').reset();
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.classList.remove('btn-success');
+                        btn.disabled = false;
+                    }, 4000);
+                }, (err) => {
+                    // UI Feedback: Error
+                    btn.innerHTML = 'Error! Try Again';
+                    btn.classList.add('btn-error');
+                    btn.disabled = false;
+                    console.error('EmailJS Error:', err);
+                });
+        });
+
+        // Smooth Scrolling Logic
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
