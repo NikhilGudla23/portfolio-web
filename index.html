@@ -13,13 +13,12 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // Your Public Key
             emailjs.init("F_wy4H2h0x1tPM0dT");
         })();
     </script>
 
     <style>
-        /* Modern Resume Button Styling added to your design */
+        /* Modern Resume Button Styling */
         .resume-btn-container {
             margin-top: 20px;
         }
@@ -47,6 +46,36 @@
         }
         .resume-btn i {
             margin-left: 10px;
+        }
+
+        /* Project View Button Styling */
+        .project-cta {
+            margin-top: 25px;
+        }
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: transparent;
+            color: #000 !important;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            border: 1.5px solid #000;
+            transition: all 0.3s ease;
+        }
+        .project-btn:hover {
+            background-color: #000;
+            color: #fff !important;
+            transform: scale(1.02);
+        }
+        .project-btn i {
+            margin-left: 8px;
+            font-size: 12px;
         }
 
         /* Success/Error states for the contact button */
@@ -84,12 +113,12 @@
                 </div>
                 <div class="info-block">
                     <h3>CONTACT</h3>
-                    <p>Hyderabad, India<br>gudlanikhil23@gmail.com
+                    <p>Hyderabad, India<br>gudlanikhil23@gmail.com</p>
                 </div>
                 <div class="info-block">
                     <h3>SERVICES</h3>
                     <p>UI/UX Design<br>Dashboard Design<br>Wireframing</p>
-                    
+                    <br>
                     <div class="resume-btn-container">
                         <a href="https://pdfhost.io/v/yGKAQ2fVGe_NIKHIL_GUDLA_RESUME" target="_blank" class="resume-btn">
                             View Resume <i class="fas fa-file-pdf"></i>
@@ -295,6 +324,9 @@
                     <div class="tags">
                         <span>UI/UX</span><span>Dashboard</span><span>Admin</span>
                     </div>
+                    <div class="project-cta">
+                        <a href="https://hms-lemon-one.vercel.app/" target="_blank" class="project-btn">View Application <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -314,6 +346,9 @@
                     <div class="tags">
                         <span>IoT</span><span>Python</span><span>Blockchain</span>
                     </div>
+                    <div class="project-cta">
+                        <a href="https://idap.vercel.app/" target="_blank" class="project-btn">View Application <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -327,11 +362,11 @@
             <div class="contact-left">
                 <h3>Have a project in mind?</h3>
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                
+                <br>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gudlanikhil23@gmail.com&su=Project%20Inquiry" target="_blank" rel="noopener noreferrer" class="contact-item" style="text-decoration: none; color: inherit;">
                     <div class="icon"><i class="far fa-envelope"></i></div>
                     <div><span class="label">EMAIL</span><p>gudlanikhil23@gmail.com</p></div>
-                </a>
+                </a><br>
 
                  <a href="https://www.linkedin.com/in/nikhil-gudla-7aba3435b/" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
                     <div class="icon"><i class="fab fa-linkedin-in"></i></div>
@@ -380,14 +415,12 @@
             const btn = document.getElementById('submitBtn');
             const originalText = btn.innerHTML;
             
-            // UI Feedback: Sending
             btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
             btn.disabled = true;
 
             const serviceID = 'service_sqhonnr';
             const templateID = 'template_8v23fgn';
 
-            // Data Mapping
             const params = {
                 from_name: document.getElementById('user_name').value,
                 reply_to: document.getElementById('user_email').value,
@@ -396,7 +429,6 @@
 
             emailjs.send(serviceID, templateID, params)
                 .then(() => {
-                    // UI Feedback: Success
                     btn.innerHTML = 'Sent Successfully! <i class="fas fa-check"></i>';
                     btn.classList.add('btn-success');
                     document.getElementById('contactForm').reset();
@@ -407,7 +439,6 @@
                         btn.disabled = false;
                     }, 4000);
                 }, (err) => {
-                    // UI Feedback: Error
                     btn.innerHTML = 'Error! Try Again';
                     btn.classList.add('btn-error');
                     btn.disabled = false;
